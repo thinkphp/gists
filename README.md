@@ -10,6 +10,8 @@ Usage
 
     $obj = new Gist();
 
-    $resp = json_decode($obj->all($user),true);
+    $user = 'thinkphp'; 
 
-    print_r($resp);
+    $resp = json_decode( $obj->all( $user ), true );
+
+    print_r( $resp );
